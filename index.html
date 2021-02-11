@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Varify Human</title>
+
+    <style>
+        .container {
+            text-align: center;
+        }
+
+        .notClicked {
+            border: 2px solid chocolate;
+            margin: 0px 8px 0px 8px;
+            box-shadow: 0px 2px 0px 2px chocolate;
+            height: 100px;
+            width: 100px;
+        }
+
+        .clicked {
+            border: 4px solid red;
+            margin: 0px 8px 0px 8px;
+            box-shadow: 0px 2px 0px 2px red;
+            height: 100px;
+            width: 100px;
+        }
+
+        button {
+            border: cyan;
+            height: 30px;
+            width: 50px;
+            margin: 20px;
+        }
+
+        h3 {
+            color: brown;
+        }
+
+        .paraAccept{
+            color: blue;
+        }
+        .paraReject {
+            color: red;
+        }
+
+        .invisible {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>
+            Please click on the identical tiles to verify that you are not a robot
+        </h3>
+        <div id="pics1"></div>
+        <button type="reset" id="reset" class="invisible" onclick="reset()">Reset</button>
+        <button type="submit" id="btn" class="invisible" onclick="varify()">Varify</button>
+        <p id="para" class="invisible"></p>
+        <script src="./index.js"></script>
+    </div>
+</body>
+
+</html>
